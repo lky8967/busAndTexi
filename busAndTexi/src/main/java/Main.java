@@ -9,6 +9,6 @@ public class Main {
         taxi.addUser();
         taxi.speedChange();
         taxi.pay();
-
+        System.out.println("------");
     }
 }
