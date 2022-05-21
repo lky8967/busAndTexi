@@ -2,13 +2,20 @@ import java.util.Scanner;
 
 public class bus {
     //필드
-    int maxPassenger;   // 최대 승객 수
-    int curPassenger;   // 현재 승객 수
-    int fee;            // 가격
-    int num;            // 버스 번호
-    int oil;            // 주유량
-    int curSpeed;       // 현재 속도
-    boolean condition; //true이면 운행 false이면 차고행.
+    private int maxPassenger;   // 최대 승객 수
+    private int curPassenger;   // 현재 승객 수
+    private int fee;            // 가격
+    private int num;            // 버스 번호
+    private int oil;            // 주유량
+    private int curSpeed;       // 현재 속도
+    private boolean condition; //true이면 운행 false이면 차고행.
+
+    // public : 외부 클래스가 자유롭게 사용가능
+    // protected : 같은 패키지 자식 클래스에서 사용할수있도록 합니다.
+    // private : 개인적인거라 외부에서 사용 불가능
+
+
+
 
     public bus(int maxPassenger, int curPassenger, int fee, int num, int oil, int curSpeed) {
         this.maxPassenger = maxPassenger;
